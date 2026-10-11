@@ -1,5 +1,7 @@
 docker build -t springboot-app:latest .  -> make sure springboot-app is the image name in deployment.yml fule
+
 kubectl apply -f deployment.yaml
+
 kubectl apply -f service.yml
 
 kubectl logs -f <pod-name>
